@@ -1,0 +1,16 @@
+<div class="profile-container">
+    <h2>profile</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">save</button>
+    </form>
+
+    <form method="post" action="{% url 'password_change' %}">
+        {% csrf_token %}
+        {{ password_change_form.as_p }}
+        <button type="submit">change password</button>
+    </form>
+    
+    <a href="{% url 'logout' %}" class="logout-btn">logout</a>
+</div>
