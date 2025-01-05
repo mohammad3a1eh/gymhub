@@ -148,4 +148,5 @@ ZARINPAL_CALLBACK_URL = 'http://127.0.0.1:8000/payment/verify/'
 SANDBOX = True
 
 LOGOUT_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'home'
 
